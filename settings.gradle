@@ -1,0 +1,4 @@
+include "bundle"
+include "service-a"
+include "service-b"
+include "simple-collector"

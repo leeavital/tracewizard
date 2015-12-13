@@ -1,0 +1,8 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 7070
+
+  adminConnectors: []
+
+

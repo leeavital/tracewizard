@@ -1,0 +1,12 @@
+task runCollector(type: JavaExec)  {
+  classpath = sourceSets.main.runtimeClasspath
+  main = "com.leeavital.tracewizard.CollectorServer"
+  args "server", "default.yml"
+}
+
+
+dependencies {
+  compile project(":bundle")
+
+  compile "io.dropwizard:dropwizard-core:0.9.0"
+}

@@ -1,0 +1,14 @@
+task runA(type: JavaExec)  {
+  classpath = sourceSets.main.runtimeClasspath
+  main = "com.leeavital.a.ServerA"
+  args "server", "default.yml"
+}
+
+
+dependencies {
+  compile project(":bundle")
+  compile project(":service-b")
+
+  compile 'com.netflix.feign:feign-okhttp:8.12.1'
+  compile "io.dropwizard:dropwizard-core:0.9.0"
+}
